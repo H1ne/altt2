@@ -2,23 +2,71 @@
 <html>
 <head>
     <title>ALTT HTML 가보자고</title>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
+    <style>
+        #all{
+            display:grid;
+            grid-template-columns:120px 1fr;
+        }
+        #LNB ul{
+            margin:0;
+            padding: 20px;
+            list-style:none;
+            font-size:14px;
+            line-height:180%;
+            font-weight:400;
+        }
+        #LNB{
+            border-right:1px solid #d7d7d7;
+        }
+        #contents{
+            padding:20px;
+        }
+        body{
+            margin:0;
+        }
+        h1{
+            font-size:24px;
+            font-weight:500;
+            text-align:left;
+            border-bottom:1px solid #d7d7d7;
+            margin:0;
+            padding: 20px;
+            padding-bottom:8px;
+        }
+        h2{
+            margin:0;
+        }
+        a{
+            text-decoration:none;
+            color:#000000;
+        }
+        .m-sel{
+            font-weight:700;
+        }
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">얼렁뚱땅 HTML</a></h1>
-    <ul>
-        <li><a href="1.html">럭키비키</a></li>
-        <li><a href="2.html">오히려조아</a></li>
-        <li><a href="3.html">가보자고</a></li>
-    </ul>
-    <h2>가보자고</h2>
-    <p>
-        원래 블렌더를 공부하려고 했으나, 현생의 웹잘알 본캐가 더 급해서 html 공부를 시작하다.
-    </p>
-    <img src="240627_apple.png" width="100%">
-    <p>
-        블렌더로 만든 사과. 원래 도넛이 될 운명이었으나 창조자의 변덕으로 <font color="red">사과</font>가 되었다.
-    </p>
+    <div id="all">
+        <div id="LNB">
+            <ul>
+                <li><a href="1.html">럭키비키</a></li>
+                <li><a href="2.html">오히려조아</a></li>
+                <li><a href="3.html" class="m-sel">가보자고</a></li>
+            </ul>
+        </div>
+        <div id="contents">
+            <h2>가보자고</h2>
+            <p>
+                원래 블렌더를 공부하려고 했으나, 현생의 웹잘알 본캐가 더 급해서 html 공부를 시작하다.
+            </p>
+            <img src="240627_apple.png" width="100%">
+            <p>
+                블렌더로 만든 사과. 원래 도넛이 될 운명이었으나 창조자의 변덕으로 <font color="red">사과</font>가 되었다.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
